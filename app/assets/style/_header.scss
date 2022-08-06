@@ -1,0 +1,31 @@
+header {
+    background: $main-color01;
+
+    nav {
+        // 桌機時內容置中左右間距
+        // @include body-padding;
+        // 物件設定
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+    }
+
+    img {
+        max-width: 80px;
+        background: contain;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin-left: $space-4;
+    }
+
+    a:hover {
+        color: lighten($main-color02, 60%);
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,32 @@
+footer {
+    background: $main-color01;
+    color: $white;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: $space-3;
+        }
+    }
+.fb,.ig,.line{
+    margin-left: 32px;
+}
+    // footer-bottom
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-bottom-right {
+        span {
+            margin-left: $space-3;
+        }
+    }
+
+}

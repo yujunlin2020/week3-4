@@ -1,0 +1,41 @@
+//Color System 色票
+$main-color01:#AA0601;
+$main-color02:#650300;
+$main-color03:#FBF2F2;
+$white:#fff;
+$black:#000;
+$gray-100:#00000029;
+$gray-300:#DEE2E6;
+$gray-500:#707070;
+
+//Font Size
+$font-size-base:16px;
+$text-sm : $font-size-base * 0.875;
+$text-base : $font-size-base ;
+$text-lg : $font-size-base * 1.25 ;
+$text-xl : $font-size-base * 1.5 ;
+$text-2xl : $font-size-base * 1.75 ;
+$text-3xl : $font-size-base * 2 ;
+$text-4xl : $font-size-base * 2.25 ;
+$text-5xl : $font-size-base * 3 ;
+$text-6xl : $font-size-base * 4 ;
+$text-7xl : $font-size-base * 4.5 ;
+
+//Space
+$space: 16px;
+$space-1 : $space * 0.25;//4
+$space-2 : $space * 0.5;//8
+$space-3 : $space * 0.625;//10
+$space-4 : $space ;
+$space-5 : $space * 1.25;//20
+$space-6 : $space * 1.5;//24
+$space-7 : $space * 1.75;
+$space-8 : $space * 1.875;
+$space-9 : $space * 2;
+$space-10 : $space * 2.25;
+$space-11 : $space * 2.5;
+$space-12 : $space * 3;
+$space-13 : $space * 4;
+$space-14 : $space * 4.875;
+$space-15 : $space * 5;
+$space-16 : $space * 5.5;

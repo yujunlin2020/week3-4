@@ -1,0 +1,98 @@
+// banner
+.banner {
+    background: url(../images/home-header.png) no-repeat;
+    background-size: contain;
+    height: 590px;
+    text-align: right;
+    color: $main-color02;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .container {
+        margin: 0;
+    }
+
+    h4 {
+        font-size: $text-4xl;
+        line-height: 54px;
+    }
+
+    h2 {
+        font-size: $text-6xl;
+        font-weight: bold;
+        line-height: 96px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        background-color: $main-color01;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+    }
+}
+
+// 4icon section2
+.section2 {
+    padding: 80px 0;
+    background: $main-color03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: $text-5xl;
+        color: $main-color02;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $space-6;
+
+    }
+
+    h6 {
+        color: $main-color02;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card {
+        width: 25%;
+        text-align: center;
+        margin-right: $space-6;
+        .icon4{
+            width: $space-13;
+            margin-bottom: $space-3;
+        }
+        h6{
+            font-weight: bold;
+            font-size: $text-xl;
+        }
+        p{
+            text-align: left;
+            margin-top: $space-2;
+            line-height: $space-6;
+        }
+    }
+    
+}
+
+//classic section3 
+.classic{
+    h2{
+        font-size: $text-12;
+    }
+    .classic-photos{
+        max-width: 33%;
+        margin-right: $space-6;
+    }
+   img{
+    max-width: 100%;
+
+   }
+}
