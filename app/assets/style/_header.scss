@@ -1,5 +1,6 @@
 header {
     background: $main-color01;
+    padding: 12px 0;
 
     nav {
         // 桌機時內容置中左右間距
@@ -9,6 +10,10 @@ header {
         justify-content: space-between;
         align-items: center;
         color: $white;
+
+        @include phone {
+            flex-direction: column;
+        }
     }
 
     img {
@@ -18,14 +23,36 @@ header {
 
     ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include phone {
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 
     li {
-        margin-left: $space-4;
+        @include phone {
+            border: 1px solid white;
+            text-align: center;
+            width: 50%;
+        }
     }
 
-    a:hover {
-        color: lighten($main-color02, 60%);
-        font-weight: 900;
+    a {
+        padding: 12px $space-4;
+        @include phone {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 12px 0;
+        }
+
+        &:hover {
+            color: lighten($main-color02, 60%);
+            font-weight: 900;
+        }
     }
+
 }

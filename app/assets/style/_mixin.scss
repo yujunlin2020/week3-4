@@ -7,16 +7,21 @@
 // body左右邊距 End
 
 // 響應式設定 Start
-$pad:992px;
-$mobile:767px;
-
+$dask:992px;
+$pad:767px;
+$mobile:576px;
+@mixin pc {
+    @media(max-width:$dask){
+        @content;
+    }
+}
 @mixin pad {
     @media (max-width:$pad){
         @content;
     }
 }
 
-@mixin mobile{
+@mixin phone{
     @media (max-width:$mobile){
         @content;
     }

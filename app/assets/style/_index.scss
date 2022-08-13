@@ -2,12 +2,19 @@
 .banner {
     background: url(../images/home-header.png) no-repeat;
     background-size: contain;
-    height: 590px;
+    height: 570px;
     text-align: right;
     color: $main-color02;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    max-width: 100%;
+
+    @include phone {
+        background: url(../images/home-header-sm.png);
+        max-width: 100%;
+        background-position: center left;
+    }
 
     .container {
         margin: 0;
@@ -16,6 +23,11 @@
     h4 {
         font-size: $text-4xl;
         line-height: 54px;
+
+        @include phone {
+            font-size: $space;
+            line-height: 36px;
+        }
     }
 
     h2 {
@@ -23,6 +35,12 @@
         font-weight: bold;
         line-height: 96px;
         margin-bottom: 10px;
+
+        @include phone {
+            font-size: $text-4xl;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
     }
 
     a {
@@ -36,20 +54,10 @@
 
 // 4icon section2
 .section2 {
-    padding: 80px 0;
     background: $main-color03;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    h2 {
-        font-size: $text-5xl;
-        color: $main-color02;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: $space-6;
-
-    }
 
     h6 {
         color: $main-color02;
@@ -59,40 +67,145 @@
         display: flex;
         justify-content: center;
 
+        @include phone {
+            display: flex;
+            gap: 36px;
+        }
+
     }
 
     .card {
         width: 25%;
         text-align: center;
         margin-right: $space-6;
-        .icon4{
+
+        @include phone {
+            width: 100%;
+        }
+
+        .icon4 {
             width: $space-13;
             margin-bottom: $space-3;
         }
-        h6{
+
+        h6 {
             font-weight: bold;
             font-size: $text-xl;
         }
-        p{
-            text-align: left;
+
+        p {
             margin-top: $space-2;
-            line-height: $space-6;
         }
     }
-    
 }
 
 //classic section3 
-.classic{
-    h2{
-        font-size: $text-12;
-    }
-    .classic-photos{
+.classic {
+    .classic-photos {
         max-width: 33%;
         margin-right: $space-6;
-    }
-   img{
-    max-width: 100%;
 
-   }
+        @include phone {
+            max-width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .classic-photos:nth-child(3) {
+        margin-right: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+// glasses section4
+.glasses {
+    background-image: url(../images/index-bg-sm.png);
+    background-position: center;
+
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+
+        @include phone {
+            margin: 16px;
+        }
+    }
+
+    .card {
+        background-color: #fff;
+
+        @include phone {
+            &:first-child {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+}
+
+// recommend section5
+.recommend {
+    .card {
+        box-shadow: 0px 2px 6px #00000029;
+        max-width: 25%;
+        margin-right: $space-6;
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+
+        @include phone {
+            max-width: 100%;
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+    }
+
+    .cardBody {
+        padding: $space;
+    }
+
+    .cardTitle {
+        margin-bottom: $space-4;
+    }
+
+    p {
+        min-height: 120px;
+    }
+}
+
+//contact
+.contact {
+    background: $main-color03;
+
+    .container {
+        max-width: 40%;
+
+        @include phone {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        margin-bottom: $space-4;
+    }
+
+    input[type="submit"] {
+        background-color: $main-color01;
+        color: #fff;
+        border: 0;
+        padding: $space 176px;
+        margin: $space-6 auto 0 auto;
+
+        @include phone {
+            padding: $space 120px;
+        }
+    }
 }

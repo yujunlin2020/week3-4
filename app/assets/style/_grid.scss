@@ -1,9 +1,69 @@
-.container{
+// grid
+.container {
     max-width: 1296px;
     margin: 0 auto;
-    padding: $space 200px;
+    padding: 0 200px;
+
+    @include pad {
+        padding: 0 14px;
+    }
+
+    @include phone {
+        padding: 0 14px;
+    }
 }
 
-.row{
+.row {
     display: flex;
+
+    @include phone {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// flex
+.d-flex {
+    display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+// font
+.text-center {
+    text-align: center;
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+.text-48 {
+    font-size: 48px;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+// space
+.mb-4 {
+    margin-bottom: $space-4;
+}
+
+.mb-6 {
+    margin-bottom: $space-6;
+}
+
+.p-0{
+        padding: 0 ;
+}
+.p-sm-14{
+    padding: 0 14px;
 }

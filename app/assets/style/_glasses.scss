@@ -1,0 +1,135 @@
+// glassesNav
+.glassesNav {
+    nav{
+        @include phone {
+   
+          }
+    }
+    a {
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        border-left: 1px solid #DCDCDC;
+        &:nth-child(3) {
+            border-right: 1px solid #DCDCDC;
+        }
+        &.active,
+        &:hover {
+            border-bottom: 8px solid $main-color01;
+            transition: all .3s;
+        }
+        &:hover {
+            color: $main-color01;
+        }
+        @include phone {
+         padding: 25px 5px;
+         font-size: 0.8rem;
+          }
+    }
+}
+
+//img
+.glassesImg {
+    .row{
+        @include phone{
+            flex-direction: row;
+        }
+    }
+    img {
+        max-width: 50%;
+        @include phone{
+           height: 100px;
+        }
+    }
+}
+
+// 鏡框
+.glassesPhotoes {
+    h4 {
+        font-size: $text-5xl;
+        text-align: center;
+        font-weight: 500;
+        @include phone{
+            font-size: 36px;
+        }
+    }
+.subtitle {
+    @include phone{
+        font-size: 30px;
+    }
+}
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .card {
+        width: 24%;
+        margin-bottom: 80px;
+        @include phone{
+            width: 100%;
+        }
+    }
+
+    .card-title {
+        display: flex;
+        justify-content: space-between;
+        @include phone{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        span {
+            &:nth-child(2) {
+                color: $main-color01;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .color {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .color1,
+    .color2 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: #B75929;
+        @include phone{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .color1 {
+        margin-right: 4px;
+        background-color: #5F3E2D;
+        @include phone{
+            margin-right: 8px;
+        }
+    }
+}
+
+// pagination
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    .pageLink {
+        color: #000;
+        padding: 12px;
+        border: 1px solid;
+        &:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid;
+        }
+    }
+}
