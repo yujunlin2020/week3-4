@@ -325,7 +325,7 @@ footer {
         font-size: 16px; } }
 
 .banner {
-  background: url(./images/home-header.png) no-repeat;
+  background: url(../images/home-header.png) no-repeat;
   background-size: contain;
   height: 570px;
   text-align: right;
@@ -342,7 +342,7 @@ footer {
   max-width: 100%; }
   @media (max-width: 576px) {
     .banner {
-      background: url(./images/home-header-sm.png);
+      background: url(../images/home-header-sm.png);
       max-width: 100%;
       background-position: center left; } }
   .banner .container {
@@ -428,7 +428,7 @@ footer {
   max-width: 100%; }
 
 .glasses {
-  background-image: url(./images/index-bg-sm.png);
+  background-image: url(../images/index-bg-sm.png);
   background-position: center; }
   .glasses h2 {
     color: white; }
