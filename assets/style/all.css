@@ -100,7 +100,7 @@ a {
   text-decoration: none; }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 200px; }
   @media (max-width: 767px) {
@@ -123,6 +123,9 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+
+.gap-24px {
+  gap: 24px; }
 
 .d-flex {
   display: -webkit-box;
@@ -185,7 +188,7 @@ header {
                 flex-direction: column; } }
   header img {
     max-width: 80px;
-    background: contain; }
+    background: cover; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -277,7 +280,9 @@ footer {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    font-size: 24px;
+    letter-spacing: 3px; }
     footer .telephone i,
     footer .email i {
       margin-right: 20px; }
@@ -285,6 +290,13 @@ footer {
         footer .telephone i,
         footer .email i {
           margin-right: 10px; } }
+    footer .telephone a,
+    footer .email a {
+      color: #fff; }
+    @media (max-width: 576px) {
+      footer .telephone,
+      footer .email {
+        font-size: 16px; } }
   footer .telephone {
     margin-top: 30px;
     margin-bottom: 20px; }
@@ -326,7 +338,7 @@ footer {
 
 .banner {
   background: url(../images/home-header.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 570px;
   text-align: right;
   color: #650300;
@@ -414,15 +426,10 @@ footer {
       margin-top: 8px; }
 
 .classic .classic-photos {
-  max-width: 33%;
-  margin-right: 24px; }
+  max-width: 33%; }
   @media (max-width: 576px) {
     .classic .classic-photos {
-      max-width: 100%;
-      margin-right: 0; } }
-
-.classic .classic-photos:nth-child(3) {
-  margin-right: 0; }
+      max-width: 100%; } }
 
 .classic img {
   max-width: 100%; }
@@ -447,15 +454,11 @@ footer {
 .recommend .card {
   -webkit-box-shadow: 0px 2px 6px #00000029;
           box-shadow: 0px 2px 6px #00000029;
-  max-width: 25%;
-  margin-right: 24px; }
-  .recommend .card:nth-child(4) {
-    margin-right: 0; }
+  max-width: 25%; }
   @media (max-width: 576px) {
     .recommend .card {
       max-width: 100%;
-      margin-bottom: 16px;
-      margin-right: 0; } }
+      margin-bottom: 16px; } }
 
 .recommend .cardBody {
   padding: 16px; }
@@ -481,6 +484,9 @@ footer {
     border: 0;
     padding: 16px 176px;
     margin: 24px auto 0 auto; }
+    @media (max-width: 767px) {
+      .contact input[type="submit"] {
+        padding: 16px 20%; } }
     @media (max-width: 576px) {
       .contact input[type="submit"] {
         padding: 16px 120px; } }
